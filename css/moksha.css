@@ -1,0 +1,340 @@
+html 
+{ 
+	margin: 0 0 3px 0;
+	height: 100%;	
+}
+body 
+{
+	text-align:center;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #999999;
+	margin: 0px;
+	padding: 0px;
+    height: 100%;  /*** 'Short' demo fix; layout breaks if scrollbar is forced. ***/
+}
+
+h4, h2
+{
+	padding: 1px;
+	margin: 0;
+}
+
+p
+{
+	padding: 0;
+	margin: 0;
+}
+
+body#white
+{
+	background:#FFFFFF;
+}
+
+body#black
+{
+	background:#000000;
+}
+
+.blackShadow
+{
+	color: #FFFFFF;
+}
+
+.whiteShadow
+{
+	color: #000000;
+}
+
+#frame 
+{
+	width:740px;
+	height: 528px;
+	margin: 0px auto;  /* to fix centering in Mozilla */
+	margin-top: 50px;
+	padding:0px;
+}
+#contentLeft 
+{
+	width: 100px;
+	position: relative;
+	padding:0px;
+	float: left;
+	text-align: left;
+	height: inherit;
+}
+/* hack the contentLeft width so the content fits in IE */
+* html #contentLeft
+{
+	width: 80px; 
+}
+#contentCentre 
+{
+	width:500px;
+	height: 500px;
+	position: relative;	
+	padding:0px;
+	float:left;
+	margin-top: 28px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: justify;
+	color: white;
+	font-size: 13px;
+}
+/* hack the contentCentre width so the content fits in IE */
+* html #contentCentre
+{
+	width: 475px; 
+}
+#contentCentreDoc
+{
+	width:600px;
+	height: 500px;
+	position: relative;	
+	padding:0px;
+	float:left;
+	margin-top: 28px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+/* hack the contentCentreDoc width so the content fits in IE */
+* html #contentCentreDoc
+{
+	width: 575px; 
+}
+#imageDoc
+{
+	width: 500px;
+	float: left;
+}
+.image_text
+{
+	position: relative;
+	text-align: center;
+	top: 30px;
+	width: 500px;	
+}
+#contentRight 
+{
+	width:100px;
+	padding:0px;
+	position: relative;	
+	float: left;
+	position: relative;
+	padding-top: 28px;
+	height: inherit;
+}
+/* hack the contentRight width so the content fits in IE */
+* html #contentRight
+{
+	width: 90px; 
+}
+/* hack the contentRight width so the content fits in IE */
+* html #contentRightDoc
+{
+	width: 90px; 
+}
+#contentBottomRight
+{
+	width: 95px;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: -3px;
+}
+#contentBottomRight .up_down
+{
+	position: relative;
+}
+#contentBottomRight .up_down div a
+{
+	width: 18px;
+	height: 15px;
+	display: inline-block;
+}
+#contentBottomRight .up_down .up_arrow a
+{
+	background-image: url('../images/site/grey_up.gif');
+}
+#contentBottomRight .up_down .up_arrow a:hover
+{
+	background-image: url('../images/site/pink_up.gif');
+}
+#contentBottomRight .up_down .down_arrow a
+{
+	background-image: url('../images/site/grey_down.gif');
+}
+#contentBottomRight .up_down .down_arrow a:hover
+{
+	background-image: url('../images/site/pink_down.gif');
+}
+/*
+	logo navigation to home
+*/
+#logo_nav img
+{
+	border-style: none;
+}
+/*
+	The text navigation
+*/
+ul#nav_text_documentary 
+{
+	width: 100px;
+	margin: 0px;
+	padding: 3em 0px 0px 0px;
+	list-style-type: none;
+	border-bottom: .10em solid #999999;
+}
+#nav_text_documentary li
+{
+	padding-top: .1em;
+	padding-bottom: .1em;
+	border-top: .10em solid #999999;
+}
+ul#nav_text_commercial 
+{
+	width: 110px;
+	margin: 0px;
+	padding: 3em 0px 0px 0px;
+	list-style-type: none;
+	border-bottom: .10em solid #999999;
+}
+#nav_text_commercial li
+{
+	padding-top: .1em;
+	padding-bottom: .1em;
+	border-top: .10em solid #999999;
+}
+ul#nav_text_right
+{
+	list-style-type: none;
+}
+#nav_text_documentary a, a.pageLink
+{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #999999;
+	border-left: 0;
+}
+#nav_text_documentary a:hover, a:hover.pageLink
+{
+	color: #C90F58;
+}
+#contentLeft #nav_text_documentary li a.current_section
+{
+	color: #C90F58;
+}
+#nav_text_commercial a
+{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #999999;
+	border-left: 0;
+}
+#nav_text_commercial a:hover
+{
+	color: #C90F58;
+}
+#contentLeft #nav_text_commercial li a.current_section
+{
+	color: #C90F58;
+}
+/*
+	box navigation
+*/
+ul#nav_box 
+{
+	position: relative;
+	left: -45px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul#nav_box li
+{
+	font-size: 1em;
+	padding: 0 0 8px 8px;
+	line-height: 1.2em;
+	margin: 0px;
+}
+ul#nav_box a img
+{
+	border: 1px solid #999999;
+}
+#contentRight #nav_box li a.current img
+{
+	border-color: #C90F58;
+}
+#contentRightDoc #nav_box li a.current img
+{
+	border-color: #C90F58;
+}
+ul#nav_box a:hover 
+{
+	border-color: #C90F58;
+}
+ul#nav_box a:hover img
+{
+	border-color: #C90F58;
+}
+/*#innerbox #navbox li a#current*/
+/* hide from MacIE5 (fix for WinIE "escaping floats" bug) \*/
+* html #frame #contentLeft #contentCentre #contentRight #contentRightUpper #contentRightLower #nav_box
+{
+	display: inline;
+	height: 1%;
+	width: auto !important;
+	width /**/: 90%;
+}
+* html #frame #contentRight #nav_box
+{
+	display: inline;
+	height: 1%;
+}
+div#frame hr 
+{
+	display: block; 
+	clear: left; 
+	margin: -0.66em 0;
+    visibility: hidden;
+}
+/*get rid of border round pdf link images*/
+#contentCentre a img
+{
+	border: none;
+}
+.bolded
+{contentBottomRight
+	font-weight: 600;
+}
+
+.introLink
+{
+	text-decoration: none;
+	color: #C90F58;
+	border-left: 0;
+}
+
+.contact
+{
+	text-align: right;
+	color: #000000;
+}
+
+div#contentCentre > h3.contentText > a
+{
+	text-decoration: none;
+	color: #999999;
+}
+
+div#contentCentre > h3.contentText > a:hover
+{
+	text-decoration: none;
+	color: #C90F58;
+}
