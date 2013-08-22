@@ -114,6 +114,9 @@ body#black
 {
 	position: relative;
 	text-align: center;
+	font-size: 11px;
+	line-height: 1.5em;
+	color: #999999;
 	top: 30px;
 	width: 500px;	
 }
