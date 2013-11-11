@@ -16,6 +16,7 @@
 		if(isset($subsection))
 		{
 			$subsectionArrayForTitle = explode(' ', $subsection);
+			$subsectionArrayForTitle = str_replace('_', ' ', $subsectionArrayForTitle);
 			$pageTitle .= ' - ' . $subsectionArrayForTitle[NAME];
 		}
 	}

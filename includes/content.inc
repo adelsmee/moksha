@@ -12,14 +12,14 @@
 			echo '<img src="' . COLOUR_PATH . '/home.jpg" alt="Moksha Home" width="500" height="500" />';
 			exit;
 		}
-		elseif($sectionName == 'contact')
+		elseif($sectionName == 'Contact')
 		{
 			include('contact.inc');
 		}
-		elseif($subsectionNameFromURL == 'haiti_project')
-		{
-			include('haiti_project.inc');
-		}
+		// elseif($subsectionNameFromURL == 'haiti_project')
+		// {
+		// 	include('haiti_project.inc');
+		// }
 		else
 		{
 			include('normal.inc');

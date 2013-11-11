@@ -12,7 +12,7 @@
 					
 			while (false !== ($sectionFile = readdir($sectionHandle))) 
 			{
-	    		if ($sectionFile =="." | $sectionFile =="..") 
+	    		if (strpos($sectionFile, '.') === 0) 
 	    		{	
 					continue;
 			    }
