@@ -65,7 +65,7 @@
 	else
 	{
 ?>
-		<img src="<?php echo $currentDir. '/' . $currentImage; ?>" alt="<?php echo ''; ?>" width="500" height="500" />
+		<img src="<?php echo $currentDir. '/' . $currentImage; ?>" alt="<?php echo ''; ?>" width="990" height="560" />
 <?php
 	}
 ?>
