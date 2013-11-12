@@ -9,17 +9,13 @@
 	    
 	    if($section == 0)
 		{
-			echo '<img src="' . COLOUR_PATH . '/home.jpg" alt="Moksha Home" width="500" height="500" />';
+			echo '<img src="' . COLOUR_PATH . '/home.jpg" alt="Moksha Home" width="990px" height="560px" />';
 			exit;
 		}
 		elseif($sectionName == 'Contact')
 		{
 			include('contact.inc');
 		}
-		// elseif($subsectionNameFromURL == 'haiti_project')
-		// {
-		// 	include('haiti_project.inc');
-		// }
 		else
 		{
 			include('normal.inc');

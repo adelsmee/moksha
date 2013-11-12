@@ -9,7 +9,7 @@
         <ul id="nav_text_commercial">
 		<?php 
 			$sectionHandle = opendir(SECTION_PATH); 
-					
+			$sectionDirNames = array();	
 			while (false !== ($sectionFile = readdir($sectionHandle))) 
 			{
 	    		if (strpos($sectionFile, '.') === 0) 
@@ -17,10 +17,17 @@
 					continue;
 			    }
 			    
-			    $sectionFromDir = $sectionFile;
+			    $sectionDirNames[] = $sectionFile;
+			}
+
+
+			asort($sectionDirNames);
+
+			foreach ($sectionDirNames as $sectionFromDir) 
+			{
 			    $sectionData = explode(' ', $sectionFromDir);
 			    $sectionName = $sectionData[NAME];
-
+				$sectionOrder = $sectionData[ORDER];
 			    if($sectionFromDir == $section)
 				{
 					$currentSection = 'current_section';
@@ -42,7 +49,6 @@
 				
 				echo '</li>';
 			}
-
 		?>
         </ul>
     </div><!-- end contentLeft div -->

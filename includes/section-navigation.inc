@@ -16,7 +16,6 @@
 				$subsectionOrder = $subsectionData[ORDER];
 			    $subsectionName = $subsectionData[NAME];
 			    $subsectionName = str_replace('_', ' ', $subsectionName);
-	
 			    if(ctype_digit($subsectionOrder))
 				{
 					if($subsectionFromDir == $subsection)
